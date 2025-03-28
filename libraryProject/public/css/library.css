@@ -1,0 +1,75 @@
+/* General Styles */
+html, body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Completely remove horizontal scrolling */
+}
+
+/* Library Section */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.library-section {
+    background: linear-gradient(to right, #ffffff, #f2f2f2);
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Prevents internal content from causing overflow */
+}
+
+/* Image Styling */
+.library-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.library-image:hover {
+    transform: scale(1.05);
+}
+
+/* Text Styling */
+.library-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.library-content p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.library-content ul {
+    padding-left: 20px;
+}
+
+.library-content ul li {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 8px;
+    list-style-type: "📚 ";
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .library-section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .library-image {
+        margin-bottom: 20px;
+    }
+}
